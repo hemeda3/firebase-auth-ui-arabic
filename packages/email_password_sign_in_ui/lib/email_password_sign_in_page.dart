@@ -94,7 +94,11 @@ class _EmailPasswordSignInPageState extends State<EmailPasswordSignInPage> {
   }
 
   Widget _buildEmailField() {
-    return TextFormField(
+    return
+      Directionality(
+          textDirection: TextDirection.rtl,
+      child: TextFormField(
+
       key: const Key('email'),
       controller: _emailController,
       decoration: InputDecoration(
@@ -111,11 +115,13 @@ class _EmailPasswordSignInPageState extends State<EmailPasswordSignInPage> {
       inputFormatters: <TextInputFormatter>[
         model.emailInputFormatter,
       ],
-    );
+    ));
   }
 
   Widget _buildPasswordField() {
-    return TextFormField(
+    return Directionality(
+        textDirection: TextDirection.rtl,
+        child:TextFormField(
       key: const Key('password'),
       controller: _passwordController,
       decoration: InputDecoration(
@@ -128,7 +134,7 @@ class _EmailPasswordSignInPageState extends State<EmailPasswordSignInPage> {
       textInputAction: TextInputAction.done,
       keyboardAppearance: Brightness.light,
       onEditingComplete: _passwordEditingComplete,
-    );
+    ));
   }
 
   Widget _buildContent() {

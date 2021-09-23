@@ -1,8 +1,8 @@
-name: email_password_sign_in_ui
-description: A new Flutter package project.
+name: ar_email_password_sign_in_ui
+description: A new Flutter package project- Arabic
 version: 0.3.0
-author: Andrea Bizzotto
-homepage: https://www.codewithandrea.com
+author: Andrea Bizzotto, Ahmed Yousri
+homepage: https://www.mapledoum.com
 publish_to: none
 
 environment:
@@ -15,17 +15,17 @@ dependencies:
   alert_dialogs:
     #path: ../alert_dialogs
     git:
-      url: https://github.com/bizz84/codewithandrea_flutter_packages
+      url: https://github.com/hemeda3/firebase-auth-ui-arabic
       path: packages/alert_dialogs
   custom_buttons:
     #path: ../custom_buttons
     git:
-      url: https://github.com/bizz84/codewithandrea_flutter_packages
+      url: https://github.com/hemeda3/firebase-auth-ui-arabic
       path: packages/custom_buttons
   string_validators:
     #path: ../string_validators
     git:
-      url: https://github.com/bizz84/codewithandrea_flutter_packages
+      url: https://github.com/hemeda3/firebase-auth-ui-arabic
       path: packages/string_validators
 
 dev_dependencies:
